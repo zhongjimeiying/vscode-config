@@ -1,0 +1,227 @@
+{
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "set PYTHONIOENCODING=utf8 && python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run"
+    },
+    "code-runner.ignoreSelection": true, // 运行时忽略选中部分，总是执行所有内容
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "workbench.startupEditor": "newUntitledFile",
+    // "python.formatting.provider": "yapf",
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 0,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "update.enableWindowsBackgroundUpdates": false,
+    "search.location": "panel",
+    "terminal.integrated.rendererType": "dom",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace",
+    "workbench.colorCustomizations": {
+        "editor.selectionHighlightBorder": "#8e7f8200", //选择内容的边框颜色  
+        // "editor.selectionHighlightBackground": "#4c4a4b98",//选择内容的背景颜色  
+        "editorIndentGuide.activeBackground": "#81868d", //编辑器活动缩进参考线的颜色  
+        // "editorBracketMatch.background":"#34ee6cec",//匹配括号的背景色
+        "editorBracketMatch.border": "#00aa00", //匹配括号的边框色
+        "tab.activeBackground": "#454b58", //当前选项卡背景颜色
+        "editorCursor.foreground": "#ff5100", //光标的颜色
+        // "editorSuggestWidget.highlightForeground": "#ff0000"//建议匹配字母的颜色
+        "editorSuggestWidget.selectedBackground": "#703404", //当前选择项的背景色
+        // "editor.lineHighlightBackground": "#ff00dd",//当前行的背景色
+        // "editor.lineHighlightBorder": "#00a2ff",//当前行的边框色
+        "editorLineNumber.activeForeground": "#ff002b", //当前行数的前景色(需要在Setting->Editor:Render Line Highlight选择gutter)
+        // "editor.findMatchBackground": "#f407fc", //当前匹配项的背景色
+        "editor.findMatchBorder": "#ff0000",
+        "editor.findMatchHighlightBackground": "#166094" //其余匹配项的背景色
+    },
+    "terminal.integrated.inheritEnv": false,
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "all",
+    "liveServer.settings.donotVerifyTags": true,
+    "macros.list": {
+        "cursorEndAndNewLineAndIndent": [
+            "cursorEnd",
+            "pythonIndent.newlineAndIndent"
+        ],
+        "cursorUp": [
+            "cursorUp"
+        ],
+        "cursorDown": [
+            "cursorDown"
+        ],
+        "upThreeLines": [
+            {
+                "command": "cursorUp",
+                "args": {
+                    "times": 3
+                }
+            }
+        ],
+        "downThreeLines": [
+            {
+                "command": "cursorDown",
+                "args": {
+                    "times": 3
+                }
+            }
+        ],
+        "cursorEndAndAddColonAndNewLineAndIndent": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": ":"
+                }
+            },
+            "pythonIndent.newlineAndIndent"
+        ],
+        "scrollLineDown": [
+            "scrollLineDown"
+        ],
+        "scrollDown": [
+            {
+                "command": "scrollLineDown",
+                "args": {
+                    "times": 5
+                }
+            }
+        ],
+        "scrollLineUp": [
+            "scrollLineUp"
+        ],
+        "scrollUp": [
+            {
+                "command": "scrollLineUp",
+                "args": {
+                    "times": 5
+                }
+            }
+        ],
+        "jsCurlyBrace": [
+            "cursorEnd",
+            {
+                "command": "type",
+                "args": {
+                    "text": "{\n"
+                }
+            }
+        ],
+        "pythonDocing": [
+            {
+                "command": "type",
+                "args": {
+                    "text": "'\t---【文档注释】---"
+                }
+            },
+            "extension.generateDocstring"
+        ]
+    },
+    "python.pythonPath": "D:\\anaconda\\anaconda_program\\python.exe",
+    "workbench.statusBar.visible": true,
+    "editor.renderLineHighlight": "gutter",
+    "editor.find.autoFindInSelection": "multiline",
+    "editor.formatOnPaste": true,
+    "editor.find.addExtraSpaceOnTop": false,
+    "emmet.includeLanguages": {
+        "vue": "html"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vetur.format.options.useTabs": true,
+    "prettier.useTabs": true,
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.vueIndentScriptAndStyle": false,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "@",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "#",
+            "color": "#fed951",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "//",
+            "color": "#955539",
+            "strikethrough": true,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "todo",
+            "color": "black",
+            "strikethrough": false,
+            "backgroundColor": "#fff143"
+        }
+    ],
+    "vetur.format.options.tabSize": 4,
+    "search.followSymlinks": false,
+    "git.autorefresh": false
+}
