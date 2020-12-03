@@ -12,3 +12,5 @@
 10. Python Indent - correct python indentation
 11. Vetur - vue tooling for vs code
 12. Vue VSCode snippets - privide vue snippets
+13. Command Runner - custom shell command runner
+14. Rust - Rust for VS Code
